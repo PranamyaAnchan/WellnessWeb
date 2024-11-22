@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* General styles */
+body {
+    margin: 0;
+    font-family: "Josefin Sans",serif;
+    background-color: #e6e6fa; /* Background */
+    color: #6a4c9c; /* Text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.loginForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Form Card */
+.form-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Illustration Section */
+.illustration {
+    background-color: #d9cbf0;
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.illustration img {
+    width: 200px;
+    height: auto;
+}
+
+/* Form Content */
+.form-content {
+    flex: 6;
+    padding: 40px;
+}
+
+h1 {
+    margin: 0;
+    color: #6a4c9c;
+}
+
+p {
+    margin: 5px 0 20px;
+    color: #6a4c9c;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+input[type="text"],
+input[type="username"],
+input[type="password"] {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #a1cbec; /* Input Border */
+    border-radius: 5px;
+    background-color: #f8f8fc; /* Input Background */
+    color: #6a4c9c;
+}
+
+input[type="text"]:focus,
+input[type="username"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #6a4c9c;
+}
+
+.btn {
+    display: block;
+    width: 40%;
+    margin-left: 120px;
+    background-color: #6a4c9c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #54397a;
+}
+
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.signup-link a {
+    color: #6a4c9c;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+::placeholder{
+    color: #c9c5c5;
+}

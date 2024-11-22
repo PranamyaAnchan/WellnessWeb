@@ -1,0 +1,112 @@
+
+body{
+    background-color: #e6e6fa;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+}
+.info{
+    background-color: #a1cbec;
+    width: 100%;
+    height: 450px;
+    color: #614096;
+    margin-top: 0;
+}
+.in-info{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    gap: 60px;
+}
+.abt-article{
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    display: block;
+    padding-block: 20px;
+    line-height: 1.3;
+    padding-right: 60px;
+}
+.abt-article h1{
+    font-size: 40px;
+}
+.author{
+    display: block;
+    height: 80px;
+}
+.author-info{
+    height: 80px;
+}
+hr {
+    border: 0;
+    width:900px;
+    height: 0.3px;
+    background-color: #614096;
+    margin: 20px 0;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.article {
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    flex: 7; /* This will make the article take up available space */
+    margin-right: 20px; /* Space between article and info */
+    background-color: #e6e6fa;
+    padding: 20px;
+    height: auto;
+}
+
+.list {
+    margin-top: 50px;
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    height: 300px;
+    flex: 3; /* This will make the information section take up available space */
+    background-color: #d9cbf0;
+    padding: 20px;
+    position: sticky;
+    top: 20px; /* The point at which it will stick to the top of the viewport */
+    z-index: 10; /* Ensure it stays above other content if needed */
+    max-height: 100vh; /* Ensures the .list doesn't grow taller than the viewport */
+}
+
+.list p{
+    color: #7e7e7e;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.list p:hover{
+    color: #614096;
+}
+.article p,li{
+    font-weight: 300;
+    font-size: 19px;
+}
+.article h2,h3,h4{
+    color: #614096;
+    font-weight: 700;
+    margin-top: 50px;
+}
+ul{
+    padding-left: 20px;
+}
+li{
+    margin-bottom: 10px;
+}
+b{
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&family=Josefin+Sans:ital,wght@0,700;1,700&family=Shalimar&display=swap');
+
+body{
+    margin: 0;
+    line-height: 1.3;
+    height: 100%;
+    margin-top: 60px;
+}
+.Homepage{
+    background-color: #e6e6fa;
+}
+h3,h4,h5,h6{
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+
+.Header{
+    height: 60px;
+    width: 100%;
+    background-color: #b57edc;
+    color: #f8f8ff;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+.Header-bar{
+    display: flex;
+    gap: 70px;
+    padding-left: 40px;
+    height: 100%;
+}
+
+
+.login-button{
+    background-color: #6a4c9c;
+    color: #f8f8ff;
+    border: none;
+    border-radius: 15%;
+    width: 70px;
+    height: 40px;
+    margin: 10px;
+    position: absolute;
+    right: 160px;
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease,transform 0.3s ease,background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.login-button:hover{
+    background-color: #a8d8ff;
+    color: #555555;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.login-button:active{
+    transform: scale(0.95); /* Slightly shrink when clicked */
+}
+
+.signup-button {
+    background-color: #6a4c9c;
+    color: #f8f8ff;
+    border: none;
+    border-radius: 15%;
+    width: 90px;
+    height: 40px;
+    margin: 10px;
+    position: absolute;
+    right: 40px; /* Positioned to the right of the login button */
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Hover effect for sign-up button */
+.signup-button:hover {
+    background-color: #a8d8ff;
+    color: #555555;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Active state for sign-up button */
+.signup-button:active {
+    transform: scale(0.95);
+}
+
+
+.About{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: #555555;
+}
+.wlcm-overlay{
+    position: absolute;
+    top: 60px;
+    left: 250px;
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+.dom{
+    font-family: "Shalimar",cursive;
+    font-weight: 400;
+    position: absolute;
+    top: 50px;
+    left: 220px;
+    font-size: 90px;
+}
+.para1{
+    font-family: "Josefin Sans",serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    left: 200;
+    top: 210px;
+    position: absolute;
+}
+.para2{
+    font-family: "Josefin Sans",serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    left: 80;
+    top: 230px;
+    position: absolute;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+#aboutSection{
+    padding: 40px;
+    background-color: #e6e6fa;
+    font-size: 1.2em;
+    font-family: "Josefin Sans",serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+.aboutus:hover{
+    color: #6a4c9c;
+}
+.aboutus{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: color 0.1s ease;
+}
+
+
+.bubble-button{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: #6a4c9c;
+    color: #f8f8ff;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, background-color 0.4s ease;
+}
+.bubble-button:hover{
+    transform: scale(1.1);
+    background-color: #a8d8ff;
+    color: #555555;
+}
+.bubble-button:active{
+    transform: scale(0.95);
+}
+
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.1s ease;
+}
+.dropdown:hover{
+    color: #6a4c9c;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    background-color: #e6e6fa;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 1;
+}
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #555555;
+    text-decoration: none;
+    font-weight:100;
+    font-size: small;
+}
+.dropdown-content a:hover {
+    background-color: #a8d8ff;
+    color: #6a4c9c;
+}
+.dropdown.clicked .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
